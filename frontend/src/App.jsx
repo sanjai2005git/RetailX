@@ -32,7 +32,7 @@ function App() {
   const [cacheStatus, setCacheStatus] = useState({}); // tracking redis cache hits
 
   // API base (Routes via API Gateway)
-  const API_BASE = "http://localhost:8080/api/v1";
+  const API_BASE = "http://localhost:8088/api/v1";
 
   // Add system log helper
   const addLog = (message, service = 'SYSTEM') => {

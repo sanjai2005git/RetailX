@@ -21,9 +21,17 @@ public class RabbitMQConfig {
     @Value("${rabbitmq.routingkey.order}")
     private String orderRoutingKey;
 
+    @Value("${rabbitmq.queue.payment}")
+    private String paymentQueue;
+
     @Bean
     public Queue orderQueue() {
         return new Queue(orderQueue);
+    }
+
+    @Bean
+    public Queue paymentQueue() {
+        return new Queue(paymentQueue);
     }
 
     @Bean

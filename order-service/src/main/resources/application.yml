@@ -25,7 +25,10 @@ spring:
 rabbitmq:
   queue:
     order: order_queue
+    payment: payment_queue
   exchange:
     order: order_exchange
+    payment: payment_exchange
   routingkey:
     order: order_routing_key
+    payment: payment_routing_key
